@@ -1,6 +1,6 @@
 <?php
 
-namespace webmenedzser\UVBConnector;
+namespace rrd108\UVBConnector;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
