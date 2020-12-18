@@ -4,6 +4,7 @@ namespace webmenedzser\UVBConnector;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
+use Requests;
 
 /**
  * Class UVBConnector
@@ -135,6 +136,9 @@ class UVBConnector
             'emailHash' => $this->hash,
             'outcome' => $outcome
         ];
+
+$response = Requests::post($this->baseUrl, array(), $payload);
+var_dump($response->body);
 
         $client = new Client();
         try {
